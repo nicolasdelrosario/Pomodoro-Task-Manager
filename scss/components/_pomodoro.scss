@@ -1,0 +1,53 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+#mode-pomodoro--group {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#pomodoro-clock {
+  @include font-size(80px, 600, 1.5);
+  font-family: $outfit;
+  margin: 50px 0
+}
+
+.pomodoro-task--container {
+  @include m-p(0 auto, 0 12px 50px);
+  max-width: 620px;
+
+  li::before {
+    @include size(8px, 8px, 0, 0 6px 2px 0);
+    background: $fuchsia;
+    border-radius: $rounded;
+    content: "";
+    display: inline-block;
+  }
+}
+
+body.light {
+  #pomodoro-clock {
+    color: $black;
+  }
+}
+
+body.dark {
+  #pomodoro-clock {
+    color: $white;
+  }
+}
+
+@media (min-width: 992px) {
+  #mode-pomodoro--group {
+    display: block;
+  }
+
+  #pomodoro-clock {
+    @include font-size(100px, 600, 1.5);
+    margin: 0;
+  }
+
+  .pomodoro-task {
+    padding-top: 120px;
+  }
+}

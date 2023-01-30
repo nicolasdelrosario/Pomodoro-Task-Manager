@@ -33,6 +33,68 @@
           alt="Theme switcher."></button>
     </div>
   </header>
+  <main>
+    <main id="main">
+      <div class="container my-5">
+        <section class="tab-slider--nav d-flex justify-content-center w-100">
+          <ul class="tab-slider--tabs">
+            <li class="tab-slider--trigger active" rel="pomodoro">Pomodoro</li>
+            <li class="tab-slider--trigger" rel="tasks">To-Do List</li>
+          </ul>
+        </section>
+        <div class="tab-slider--container my-5">
+          <section id="pomodoro" class="tab-slider--body">
+            <div class="container">
+              <div class="row">
+                <figure class="col-sm-12 col-md-6 d-none d-lg-block">
+                  <img class="img-fluid image" src="../assets/img/pomodoro.svg" alt="To-Do List image">
+                </figure>
+                <div class="col-sm-12 col-lg-6">
+                  <div
+                    class="timer text-center w-100 h-100 p-3 d-flex flex-column align-items-center justify-content-around">
+                    <div id="mode-pomodoro--group" class="w-100">
+                      <button data-mode="pomodoro" id="mode-data--pomodoro" class="secondary-button">Pomodoro</button>
+                      <button data-mode="shortBreak" id="mode-data--short-break" class="secondary-button">Short
+                        Break</button>
+                      <button data-mode="longBreak" id="mode-data--long-break" class="secondary-button">Long
+                        Break</button>
+                    </div>
+                    <div id="pomodoro-clock">
+                      <span id="pomodoro-clock--minutes">25</span>
+                      <span>:</span>
+                      <span id="pomodoro-clock--seconds">00</span>
+                    </div>
+                    <button data-action="start" id="pomodoro-clock-start" class="primary-button">Start</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="tasks" class="tab-slider--body">
+            <div class="container">
+              <div class="row">
+                <figure class="col-sm-12 col-lg-6 d-none d-lg-block">
+                  <img class="img-fluid image" src="../assets/img/todo.svg" alt="To-Do List">
+                </figure>
+                <div class="col-sm-12 col-lg-6 pt-4 position-relative">
+                  <form id="todo-form" class="to-do-list-container" action="todolist">
+                    <input id="new-todo" class="to-do-list--input" type="text" name="newtodo"
+                      placeholder="What is your next task?" />
+                    <button class="to-do-list--btn" type="submit" id="enter">
+                      <i class="bi bi-plus-circle-fill"></i>
+                    </button>
+                  </form>
+                  <div id="todos-list">
+                    <div class="todo" id="0"></div>
+                  </div>
+                  <div class="todo-notification position-absolute"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+  </main>
 
 
   <!-- Main JS -->

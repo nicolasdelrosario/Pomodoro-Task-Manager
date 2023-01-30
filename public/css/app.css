@@ -92,6 +92,101 @@
     width: auto;
   }
 }
+#mode-pomodoro--group {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#pomodoro-clock {
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 1.5;
+  font-family: "Outfit", sans-serif;
+  margin: 50px 0;
+}
+
+.pomodoro-task--container {
+  margin: 0 auto;
+  padding: 0 12px 50px;
+  max-width: 620px;
+}
+.pomodoro-task--container li::before {
+  height: 8px;
+  margin: 0 6px 2px 0;
+  padding: 0;
+  width: 8px;
+  background: #FF2E63;
+  border-radius: 50px;
+  content: "";
+  display: inline-block;
+}
+
+body.light #pomodoro-clock {
+  color: #222222;
+}
+
+body.dark #pomodoro-clock {
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  #mode-pomodoro--group {
+    display: block;
+  }
+  #pomodoro-clock {
+    font-size: 100px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0;
+  }
+  .pomodoro-task {
+    padding-top: 120px;
+  }
+}
+.tab-slider--tabs {
+  background: transparent;
+  border-radius: 35px;
+  position: relative;
+  border: 1px solid #afaebd;
+}
+.tab-slider--tabs:after {
+  background: #FF2E63;
+  border-radius: 35px;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 250ms ease-in-out;
+  width: 50%;
+}
+.tab-slider--tabs.slide:after {
+  left: 50%;
+}
+
+.tab-slider--trigger {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  cursor: pointer;
+  display: inline-block;
+  padding: 11px 20px;
+  position: relative;
+  transition: color 0.3s ease-in-out, background 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out, fill 0.3s ease-in-out, box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  z-index: 2;
+}
+.tab-slider--trigger.active {
+  color: #fff;
+}
+
+body.light {
+  color: #222222;
+}
+
+body.dark {
+  color: #fff;
+}
+
 #theme-switcher {
   border-radius: 50px;
   position: relative;
@@ -170,6 +265,122 @@ body.dark .text {
     font-size: 20px;
     font-weight: 400;
     line-height: 1.5;
+  }
+}
+.to-do-list--input {
+  border-radius: 16px;
+  border: 1px solid rgba(113, 112, 130, 0.3215686275);
+  color: #717082;
+  display: inline-block;
+  padding: 8px 60px 8px 20px;
+  width: 99%;
+  background: transparent;
+}
+
+.to-do-list--btn {
+  background: transparent;
+  height: 40px;
+  margin-left: -40px;
+  display: inline-block;
+}
+.to-do-list--btn i {
+  color: #FF2E63;
+  font-size: 20px;
+}
+
+#todos-list {
+  margin-top: 1rem;
+  max-height: 250px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-overflow: ellipsis;
+}
+#todos-list::-webkit-scrollbar {
+  width: 5px;
+}
+#todos-list::-webkit-scrollbar-thumb {
+  background: #bdbdbd;
+}
+#todos-list::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+#todos-list .todo {
+  cursor: pointer;
+  display: flex;
+  padding: 10px 20px 10px 10px;
+}
+#todos-list .todo * {
+  margin-right: 15px;
+}
+#todos-list .todo i {
+  font-size: 18px;
+}
+#todos-list .todo i.bi-slash-circle-fill {
+  color: #6c63ff;
+}
+#todos-list .todo i.bi-slash-circle-fill:hover {
+  animation: vibrate 0.3s linear infinite both;
+}
+#todos-list .todo i.bi-x-circle-fill {
+  color: #FF2E63;
+}
+#todos-list .todo i.bi-x-circle-fill:hover {
+  animation: vibrate 0.3s linear infinite both;
+}
+#todos-list .todo p {
+  flex: 1;
+  word-break: break-all;
+}
+#todos-list .todo .checked {
+  text-decoration: line-through;
+}
+
+.todo-notification {
+  background-color: #6c63ff;
+  border-radius: 8px;
+  color: #fff;
+  opacity: 0;
+  padding: 8px;
+  right: 20px;
+  top: -20px;
+  transition: color 0.3s ease-in-out, background 0.3s ease-in-out, border-color 0.3s ease-in-out, transform 0.3s ease-in-out, fill 0.3s ease-in-out, box-shadow 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.notif-enter {
+  opacity: 0.9;
+}
+
+body.light .todo p {
+  color: #222222;
+}
+body.light .todo .checked {
+  color: #777;
+}
+
+body.dark .todo p {
+  color: #fff;
+}
+body.dark .todo .checked {
+  color: #777;
+}
+
+@media (min-width: 768px) {
+  #todos-list {
+    margin-top: 1rem;
+    max-height: 250px;
+  }
+}
+@media (min-width: 992px) {
+  #todos-list {
+    max-height: 300px;
+    margin-top: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  #todos-list {
+    max-height: 370px;
+    margin-top: 5rem;
   }
 }
 * {
