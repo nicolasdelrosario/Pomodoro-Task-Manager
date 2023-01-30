@@ -3,11 +3,12 @@
 
 .form {
   .form-content {
+    @include m-p(15px 0, 8px 8px 8px 10px);
     background: transparent;
     border-radius: 16px;
     border: 1px solid $dark-gray;
     color: $dark-gray;
-    @include m-p(15px 0, 8px 8px 8px 10px);
+    display: inline-flex;
 
     input,
     textarea {
