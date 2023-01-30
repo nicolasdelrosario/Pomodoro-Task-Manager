@@ -21,6 +21,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <!-- CSS -->
   <link rel="stylesheet" href="./css/app.css">
+  <!-- Scroll JS -->
+  <script defer src="./js/modules/scroll.js"></script>
 </head>
 
 <body class="light">
@@ -94,15 +96,53 @@
           </section>
         </div>
       </div>
-  </main>
+      <section class="pomodoro-task container">
+        <div class="pomodoro-task--container hidden">
+          <h2 class="title">What is Pomodoro Task <span>Manager?</span></h2>
+          <p class="text">Pomodoro Task Manager is a time management tool designed to help users be more productive by
+            using the
+            Pomodoro method and managing their tasks efficiently. </p>
+        </div>
+        <div class="pomodoro-task--container hidden">
+          <h2 class="title">What is Pomodoro <span>Technique?</span></h2>
+          <p class="text">The Pomodoro Technique is a time management method that involves breaking down work into
+            shorter
+            periods, usually 25 minutes long.
+            called "Pomodoros", separated by short breaks. The goal is to increase productivity and reduce distractions.
+          </p>
+        </div>
+        <div class="pomodoro-task--container hidden">
+          <h2 class="title">How to use Pomodoro Task <span>Manager?</span></h2>
+          <ol class="text" start="number">
+            <li>Create a list of tasks that you want to accomplish.</li>
+            <li>Set the timer for 25 minutes and start to work on your task.</li>
+            <li>Once the timer goes off, take a 5-minute break.</li>
+            <li>After 4 Pomodoros, take a longer break of 15 minutes.</li>
+            <li>Repeat the process for all of your tasks.</li>
+          </ol>
+        </div>
+        <div class="pomodoro-task--container hidden">
+          <h2 class="title">Tips and <span>Best Practices</span></h2>
+          <ul class="text">
+            <li>Eliminate distractions during your Pomodoro sessions.</li>
+            <li>Avoid multitasking, it can make you less productive.</li>
+            <li>Keep track of your progress.</li>
+            <li>Keep your task list short and manageable.</li>
+            <li>Try to work in a quiet environment.</li>
+            <li>Use the breaks to stretch and move around</li>
+            <li>Use the technique regularly to see the best results</li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
-  <div class="d-none">
-    <audio src="../assets/sounds/backtowork.ogg" data-sound="pomodoro"></audio>
-    <audio src="../assets/sounds/break.ogg" data-sound="shortBreak"></audio>
-    <audio src="../assets/sounds/break.ogg" data-sound="longBreak"></audio>
-  </div>
-  <!-- Main JS -->
-  <script type="module" src="./js/index.js"></script>
+    <div class="d-none">
+      <audio src="../assets/sounds/backtowork.ogg" data-sound="pomodoro"></audio>
+      <audio src="../assets/sounds/break.ogg" data-sound="shortBreak"></audio>
+      <audio src="../assets/sounds/break.ogg" data-sound="longBreak"></audio>
+    </div>
+    <!-- Main JS -->
+    <script type="module" src="./js/index.js"></script>
 </body>
 
 </html>
