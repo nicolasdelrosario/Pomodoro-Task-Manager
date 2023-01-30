@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/nicolasdelrosario/Pomodoro-Task-Manager/issues"
   },
-  "homepage": "https://github.com/nicolasdelrosario/Pomodoro-Task-Manager#readme"
+  "homepage": "https://github.com/nicolasdelrosario/Pomodoro-Task-Manager#readme",
+  "devDependencies": {
+    "sass": "^1.57.1"
+  }
 }
