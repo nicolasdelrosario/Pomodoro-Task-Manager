@@ -2,6 +2,7 @@ import * as switchThemeJS from './modules/switchTheme.js';
 import * as handleTabJS from './modules/handleTab.js';
 import * as pomodoroJS from './modules/pomodoro.js';
 import * as todoListJS from './modules/todoList.js';
+import * as formJS from './modules/form.js';
 
 function main() {
   //switch theme
@@ -29,6 +30,13 @@ function main() {
     action === 'check' && todoListJS.checkTodo(todoId);
     action === 'edit' && todoListJS.editTodo(todoId);
     action === 'delete' && todoListJS.deleteTodo(todoId);
+  });
+
+  //form
+  formJS.submitButton.addEventListener('click', () => {
+    formJS.validateField(formJS.emailInput, formJS.iconEmail, 5);
+    formJS.validateField(formJS.subjectInput, formJS.iconSubject, 2);
+    formJS.validateField(formJS.messageInput, formJS.iconMessage, 10);
   });
 }
 

@@ -1,0 +1,44 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.form {
+  .form-content {
+    background: transparent;
+    border-radius: 16px;
+    border: 1px solid $dark-gray;
+    color: $dark-gray;
+    @include m-p(15px 0, 8px 8px 8px 10px);
+
+    input,
+    textarea {
+      background: transparent;
+      color: $gray;
+      padding-right: 35px;
+      resize: none;
+      width: 100%;
+    }
+
+    textarea {
+      height: 150px;
+    }
+
+    .form-confirmation {
+      background: transparent;
+      display: inline-block;
+      margin-left: -30px;
+
+      i {
+        color: $purple;
+        font-size: 20px;
+      }
+
+      i.bi-check-circle-fill {
+        color: $teal;
+      }
+
+      i.bi-x-circle-fill {
+        color: $fuchsia;
+      }
+    }
+  }
+}

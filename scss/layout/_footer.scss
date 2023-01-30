@@ -1,0 +1,32 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+#footer {
+  background: $black;
+  text-align: center;
+
+  .social-buttons {
+    a {
+      position: relative;
+      margin: 10px 0;
+      span {
+        position: absolute;
+        left: 60px;
+      }
+    }
+  }
+}
+
+body.light {
+  #footer {
+    .title {
+      color: $white;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #footer {
+    text-align: start;
+  }
+}
