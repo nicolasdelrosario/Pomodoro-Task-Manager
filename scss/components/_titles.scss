@@ -1,0 +1,61 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.title {
+  @include font-size(32px, 700, 1.5);
+  font-family: $outfit;
+  margin: 0;
+  span {
+    color: $fuchsia
+  }
+}
+
+.subtitle {
+  @extend .title;
+  @include font-size(32px, 700, 1.5);
+}
+
+.text {
+  @extend .subtitle;
+  @include font-size(16px, 400, 1.5);
+  font-family: $jost;
+  padding-top: 15px;
+}
+
+body.light {
+  .title {
+    color: $black;
+  }
+
+  .subtitle {
+    color: $purple;
+  }
+
+  .text {
+    color: $soft-black;
+  }
+}
+
+body.dark {
+  .title {
+    color: $white;
+  }
+
+  .subtitle {
+    color: $purple;
+  }
+
+  .text {
+    color: $gray;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    @include font-size(36px, 700, 1.5);
+  }
+
+  .text {
+    @include font-size(20px, 400, 1.5);
+  }
+}

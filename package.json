@@ -4,7 +4,7 @@
   "description": "Pomodoro Task Manager is a time management tool designed to help users be more productive by using the Pomodoro method and managing their tasks efficiently.",
   "main": "index.js",
   "scripts": {
-    "build": "sass scss:staticDistDir/css"
+    "build": "sass scss:public/css/"
   },
   "repository": {
     "type": "git",

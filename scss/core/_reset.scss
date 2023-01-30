@@ -1,0 +1,79 @@
+@use '../abstracts/variables' as *;
+
+* {
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+body {
+  font-family: $jost;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+ol,ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+.image {
+  border-radius: $rounded;
+  padding: 12%;
+  min-height: 400px;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $gray;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $soft-black;
+}
+
+
+body.light {
+  background-color: $bg-page-light;
+}
+
+body.dark {
+  background-color: $bg-page-dark;
+}
+
+@media (min-width: 768px) {
+  .hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: all 1s ease-in-out
+  }
+  
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 1200px) {
+  .image {
+    min-height: 500px;
+  }
+}

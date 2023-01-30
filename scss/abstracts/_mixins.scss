@@ -1,0 +1,17 @@
+@mixin font-size($font-size, $font-weight, $line-height) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+@mixin size($width, $height, $padding, $margin) {
+  height: $height;
+  margin: $margin;
+  padding: $padding;
+  width: $width;
+}
+
+@mixin m-p($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
+}

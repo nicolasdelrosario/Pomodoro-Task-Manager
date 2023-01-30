@@ -1,0 +1,65 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.social-button {
+  @include font-size(22px, 400, 50px);
+  @include size(50px, 50px, 0, 0 5px);
+  background-color: $purple;
+  border-radius: $rounded;
+  box-shadow: $btn-shadow;
+  color: $bg-page-light;
+  display: inline-block;
+  text-align: center;
+
+  &:hover {
+    box-shadow: $btn-shadow-hover;
+    animation: $vibrate;
+  }
+}
+
+.primary-button {
+  @include font-size(16px, 500, normal);
+  @include size(auto, 40px, 0 20px, 0 5px);
+  background: $purple;
+  border-radius: 4px;
+  box-shadow: $btn-shadow;
+  color: $white;
+  display: inline-block;
+  font-family: $outfit;
+  text-transform: capitalize;
+  transition: $default-transition;
+
+  &:hover {
+    box-shadow: $btn-shadow-hover;
+    transform: translate(-2px, -2px);
+  }
+
+  &:focus {
+    box-shadow: $btn-shadow-hover;
+  }
+
+  &.active {
+    box-shadow: $btn-shadow-active;
+  }
+}
+
+.secondary-button {
+  @extend .primary-button;
+  @include font-size(14px, 500, normal);
+  @include size(auto, 36px, 0 6px, 0);
+  font-family: $jost;
+
+  &:hover {
+    transform: translate(-1px, -1px);
+  }
+
+  &.active {
+    background: $fuchsia;
+  }
+}
+
+@media (min-width: 768px) {
+  .secondary-button {
+    @include size(auto, 36px, 0 16px, 0 5px);
+  }
+}

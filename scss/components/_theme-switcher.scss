@@ -1,0 +1,30 @@
+@use '../abstracts/variables' as *;
+
+#theme-switcher {
+  border-radius: $rounded;
+  position: relative;
+  transition: $default-transition;
+  margin: 0 5px;
+
+  img {
+    width: 30px;
+    transition: $default-transition;
+  }
+
+  &:hover {
+    box-shadow: $btn-shadow-hover;
+    animation: none;
+  }
+}
+
+body.light {
+  #theme-switcher {
+    background-color: #FFD371;
+  }
+}
+
+body.dark {
+  #theme-switcher {
+    background-color: #7190ff;
+  }
+}

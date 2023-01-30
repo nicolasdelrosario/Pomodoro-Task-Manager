@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Nicolas Del Rosario">
   <meta name="keywords" content="HTML, SCSS, SASS, CSS, JS, Javascript, Bootstrap, Pomodoro, TodoList">
-  <meta name="description" content="Pomodoro Task Manager is a time management tool designed to help users be more productive.">
+  <meta name="description"
+    content="Pomodoro Task Manager is a time management tool designed to help users be more productive.">
   <title>Pomodoro Task Master</title>
   <!-- Typography - Jost and Outfit -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,11 +20,23 @@
   <!-- Bootstrap icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <!-- CSS -->
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/app.css">
 </head>
-<body>
+
+<body class="light">
+  <header id="header">
+    <div class="container justify-content-between align-items-center my-5 d-md-flex">
+      <a class="logo " href="#">
+        <h1 class="title">POMODORO TASK <span>MANAGER</span></h1>
+      </a>
+      <button id="theme-switcher" class="social-button d-none d-md-block"><img src="../assets/icons/light.svg"
+          alt="Theme switcher."></button>
+    </div>
+  </header>
+
 
   <!-- Main JS -->
   <script type="module" src="./js/index.js"></script>
 </body>
+
 </html>
