@@ -29,6 +29,16 @@
   <li>Vercel: Hosted.</li>
 </ul>
 
+<h2>| Getting Started</h2>
+<p>To run the code, follow these steps:</p>
+<ol>
+  <li>Clone the repository to your local machine.</li>
+  <li>Navigate to the project directory.</li>
+  <li>Run `npm install --save-dev sass@1.57.1` to install SASS library.</li>
+  <li>Run `npm run build` to convert SCSS to CSS.</li>
+  <li>Open `index.html` in your browser to view the project.</li>
+</ol>
+
 <h2>| License</h2>
 <p>This project is available under the MIT license. See the <b><a title="License" target="_blank" href="https://github.com/nicolasdelrosario/Pomodoro-Task-Manager/blob/main/LICENSE">LICENSE</a></b> </p>
 
