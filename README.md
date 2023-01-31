@@ -4,6 +4,8 @@
   <p> Pomodoro Task Manager is a simple and easy-to-use task management application that helps users to improve their productivity by using the Pomodoro Technique. This technique is based on the idea of breaking down work into short, focused intervals followed by a short break.  
   <a title="click here" target="_blank" href="https://pomodorotaskmanager.nicolasdelrosario.com">click here</a></p>
   <img src="https://res.cloudinary.com/dlghcisov/image/upload/v1675120807/projects/pomodoro/light.png" alt="Pomodoro Task Manager">
+  <br/>
+  <img src="https://github.com/nicolasdelrosario/Pomodoro-Task-Manager/blob/main/.github/speed.svg" alt="Desktop Speed">
 </div>
 
 <h2>| Technologies Used</h2>
