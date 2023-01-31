@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<svg class="theme" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" width="1000" height="285" viewBox="0 0 790 190">
+  <style>
+			.gauge-base {
+				opacity: 0.1
+			}
+			.gauge-arc {
+				fill: none;
+				animation-delay: 250ms;
+				stroke-linecap: round;
+				transform: rotate(-90deg);
+				transform-origin: 100px 60px;
+				animation: load-gauge 1s ease forwards
+			}
+			.guage-text {
+				font-size: 40px;
+				font-family: monospace;
+				text-align: center
+			}
+			.guage-red {
+				color: #ff4e42;
+				fill: #ff4e42;
+				stroke: #ff4e42
+			}
+			.guage-orange {
+				color: #ffa400;
+				fill: #ffa400;
+				stroke: #ffa400
+			}
+			.guage-green {
+				color: #0cce6b;
+				fill: #0cce6b;
+				stroke: #0cce6b
+			}
+			.theme .guage-undefined {
+				color: #5c5c5c;
+				fill: #5c5c5c;
+				stroke: #5c5c5c
+			}
+			.guage-title {
+				stroke: none;
+				font-size: 26px;
+				line-height: 26px;
+				font-family: Roboto, Halvetica, Arial, sans-serif
+			}
+			.metric.guage-title {
+				font-family: 'Courier New', Courier, monospace
+			}
+			.theme .guage-title {
+				color: #737373;
+				fill: #737373
+			}
+			@keyframes load-gauge {
+				from {
+					stroke-dasharray: 0 352.858
+				}
+			}
+			.theme
+				stroke: #616161
+			}
+		</style>
+  <svg class="guage-div guage-perf guage-green" viewBox="0 0 200 200" width="200" height="200" x="0" y="0">
+    <circle class="gauge-base" r="56" cx="100" cy="60" stroke-width="8"></circle>
+    <circle class="gauge-arc guage-arc-1" r="56" cx="100" cy="60" stroke-width="8" style="stroke-dasharray: 348.33942, 351.858;"></circle>
+    <text class="guage-text" x="100px" y="60px" alignment-baseline="central" dominant-baseline="central" text-anchor="middle">97</text>
+    <text class="guage-title" x="100px" y="160px" alignment-baseline="central" dominant-baseline="central" text-anchor="middle">Performance</text>
+  </svg>
+  <svg class="guage-div guage-acc guage-green" viewBox="0 0 200 200" width="200" height="200" x="200" y="0">
+    <circle class="gauge-base" r="56" cx="100" cy="60" stroke-width="8"></circle>
+    <circle class="gauge-arc guage-arc-2" r="56" cx="100" cy="60" stroke-width="8" style="stroke-dasharray: 341.30226000000005, 351.858;"></circle>
+    <text class="guage-text" x="100px" y="60px" alignment-baseline="central" dominant-baseline="central" text-anchor="middle">97</text>
+    <text class="guage-title" x="100px" y="160px" alignment-baseline="central" dominant-baseline="central" text-anchor="middle">Accessibility</text>
+  </svg>
+  <svg class="guage-div guage-best guage-green" viewBox="0 0 200 200" width="200" height="200" x="400" y="0">
+    <circle class="gauge-base" r="56" cx="100" cy="60" stroke-width="8"></circle>
+    <circle class="gauge-arc guage-arc-3" r="56" cx="100" cy="60" stroke-width="8" style="stroke-dasharray: 351.858, 351.858;"></circle>
+    <text class="guage-text" x="100px" y="60px" alignment-baseline="central" dominant-baseline="central" text-anchor="middle">100</text>
+    <text class="guage-title" x="100px" y="160px" alignment-baseline="central" dominant-baseline="central" text-anchor="middle">Best Practices</text>
+  </svg>
+  <svg class="guage-div guage-seo guage-green" viewBox="0 0 200 200" width="200" height="200" x="600" y="0">
+    <circle class="gauge-base" r="56" cx="100" cy="60" stroke-width="8"></circle>
+    <circle class="gauge-arc guage-arc-4" r="56" cx="100" cy="60" stroke-width="8" style="stroke-dasharray: 351.858, 351.858;"></circle>
+    <text class="guage-text" x="100px" y="60px" alignment-baseline="central" dominant-baseline="central" text-anchor="middle">100</text>
+    <text class="guage-title" x="100px" y="160px" alignment-baseline="central" dominant-baseline="central" text-anchor="middle">SEO</text>
+  </svg>
+</svg>
