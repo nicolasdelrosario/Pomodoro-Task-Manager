@@ -16,6 +16,8 @@
   <li>Bootstrap</li>
   <li>Bootstrap Icons</li>
   <li>JavaScript</li>
+  <li>Cloudinary: Image Storage.</li>
+  <li>Vercel: Hosted.</li>
 </ul>
 
 <h2>| Features</h2>
@@ -25,8 +27,6 @@
   <li>Light/Dark Mode.</li>
   <li>User friendly interface.</li>
   <li>Form Implementation.</li>
-  <li>Cloudinary: Image Storage.</li>
-  <li>Vercel: Hosted.</li>
 </ul>
 
 <h2>| Getting Started</h2>
